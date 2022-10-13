@@ -1,0 +1,19 @@
+.titulo{
+    color: rgb(0, 0, 0);
+    
+}
+.parrafo{
+    color:rgb(0, 0, 0);
+}
+.titulo1{
+    color: rgb(0, 0, 0);
+    margin-left: 500px;
+}
+.box1{
+    background-color: aliceblue;
+    border: 6px solid #252323;
+    margin-left: 300px;
+    margin-right: 300px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
