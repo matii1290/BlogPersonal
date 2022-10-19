@@ -1,49 +1,25 @@
-<div>
-    <h1 class="titulo1">ULTIMAS NOTAS</h1>
+<div class="row">
+    <h1>Noticias</h1>
     
-        <div class="box1">
-            
-                <h1 class="titulo">Noticia del dia</h1>
-                <h3 class="titulo">Fecha</h3>
-            
-            <p class="parrafo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident quae mollitia,
-                non tenetur fugiat cumque sed ut quia quod. Perferendis deleniti cumque rerum
-                ullam beatae sit id totam dignissimos consectetur?
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident quae mollitia,
-                non tenetur fugiat cumque sed ut quia quod. Perferendis deleniti cumque rerum
-                ullam beatae sit id totam dignissimos consectetur?
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident quae mollitia,
-                non tenetur fugiat cumque sed ut quia quod. Perferendis deleniti cumque rerum
-                ullam beatae sit id totam dignissimos consectetur?
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident quae mollitia,
-                non tenetur fugiat cumque sed ut quia quod. Perferendis deleniti cumque rerum
-                ullam beatae sit id totam dignissimos consectetur?
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident quae mollitia,
-                non tenetur fugiat cumque sed ut quia quod. Perferendis deleniti cumque rerum
-                ullam beatae sit id totam dignissimos consectetur?</p>
-        </div>
-    
-    
-        <div class="box1">
-            
-                <h1 class="titulo">Noticia del dia</h1>
-                <h3 class="titulo">Fecha</h3>
-            
-            <p class="parrafo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident quae mollitia,
-                non tenetur fugiat cumque sed ut quia quod. Perferendis deleniti cumque rerum
-                ullam beatae sit id totam dignissimos consectetur?</p>
-        </div>
-    
-    
-        <div class="box1">
-            
-                <h1 class="titulo">Noticia del dia</h1>
-                <h3 class="titulo">Fecha</h3>
-            
-            <p class="parrafo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident quae mollitia,
-                non tenetur fugiat cumque sed ut quia quod. Perferendis deleniti cumque rerum
-                ullam beatae sit id totam dignissimos consectetur?</p>
-        </div>
-    
-
-</div>
+    <div class="col-lg-2">
+        <button type="button" class="btn4" routerLink="/crear">
+            Nueva Noticia            
+        </button>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+<table class="table">
+    <tbody>
+        <tr *ngFor="let Noticias of notili">
+            <td>{{Noticias.nombreN}}</td>
+            <td>{{Noticias.descripcionN}}</td>
+            <td>Borrar</td>
+            <td>editarr</td>
+        </tr>
+    </tbody>
+</table>
+<h3 class="lala">Finish</h3>
