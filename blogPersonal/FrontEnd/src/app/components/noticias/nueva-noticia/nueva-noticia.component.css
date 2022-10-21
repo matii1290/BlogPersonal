@@ -1,0 +1,63 @@
+form input[type="text"]{
+	width:90%;
+	padding:8px 16px;
+	margin-top:32px;
+    padding-bottom:50px;
+	border:1px solid #000;
+	border-radius:5px;
+	display:block;
+	color:#fff;
+	background-color:rgb(39, 35, 35);
+} 
+
+.Titunoti{
+    color:rgb(255, 255, 255);
+    padding-left: 30%;
+    font-size: 40px;
+}
+.Cuernoti{
+    color:rgb(255, 255, 255);
+    padding-left: 30%;
+    font-size: 40px;
+}
+textarea[type="text"]{
+    width:90%;
+	padding:8px 16px;
+	margin-top:32px;
+    padding-bottom:50px;
+	border:1px solid #000;
+	border-radius:5px;
+	display:block;
+	color:#fff;
+	background-color:rgb(39, 35, 35);
+}
+
+.btn-3d {
+    padding: .6rem 1rem;
+    border: 1px solid #995309;
+    border-radius: 4px;
+    background-color: #d9750b;
+    color: #fff;
+    float: right;
+    margin-right:100px;
+  
+    font-size: 1.5rem;
+    text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+    box-shadow: 0 1px 0 rgba(255,255,255,.5) inset,
+      0 1px 3px rgba(0,0,0,.2);
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(10%,#f90),to(#e76a00));
+    background-image: linear-gradient(#f90 10%,#e76a00 100%);
+  }
+  
+  .btn-3d:hover, .btn-3d:focus {
+    background-color: #e0811b;
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(10%,#f0a100),to(#f70));
+    background-image: linear-gradient(#f0a100 10%,#f70 100%);
+  }
+  
+  .btn-3d:active {
+    background-color: #cf6a00;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,.2) inset;
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(10%,#f0a100),to(#f70));
+    background-image: linear-gradient(#f0a100 10%,#f70 100%);
+  }

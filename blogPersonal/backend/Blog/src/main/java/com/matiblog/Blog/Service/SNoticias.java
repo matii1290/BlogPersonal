@@ -35,7 +35,7 @@ public class SNoticias {
         rNoticias.deleteById(id);
     }
 
-    public boolean existsByNombreN(int id) {
+    public boolean existsById(int id) {
         return rNoticias.existsById(id);
     }
 

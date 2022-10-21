@@ -19,7 +19,7 @@ public lista(): Observable<Noticias[]>{
 }
 
 public detail(id: number): Observable<Noticias>{
-  return this.httpClient.get<Noticias>(this.expeURL + `detail/${id}`);
+  return this.httpClient.get<Noticias>(this.expeURL+`detail/${id}`)
 }
 
 public save(noticias: Noticias): Observable<any>{

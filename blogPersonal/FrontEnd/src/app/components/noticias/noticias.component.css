@@ -10,15 +10,17 @@
     margin-left: 500px;
 }
 .box1{
-    background-color: aliceblue;
-    border: 6px solid #252323;
+    background-color: rgb(255, 255, 255);
+    border: 6px solid #111366;
     margin-left: 300px;
     margin-right: 300px;
     padding-left: 15px;
     padding-right: 15px;
+    margin-top: 30px;
 }
 .table{
     background-color: white;
+    color: blue;
 }
 .lala{
     color: rgb(255, 255, 255);

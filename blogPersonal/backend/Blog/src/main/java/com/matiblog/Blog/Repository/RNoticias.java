@@ -7,7 +7,7 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface RNoticias extends JpaRepository<Noticias, Integer> {
-    public Optional<Noticias> findByNombreN(String nombreN);
+    public Optional <Noticias> findByNombreN(String nombreN);
     public boolean existsByNombreN(String nombreN);
     
 }

@@ -1,25 +1,20 @@
-<div class="row">
-    <h1>Noticias</h1>
-    
-    <div class="col-lg-2">
+<div >
+    <h1 class="titulo1">Noticias</h1>
+
+    <div>
         <button type="button" class="btn4" routerLink="/crear">
-            Nueva Noticia            
+            Nueva Noticia
         </button>
         <br>
         <br>
+        <div *ngFor="let Noticias of noticias">
+            <div class="box1">
+            <h1>{{Noticias.nombreN}}</h1>
+            <h3>{{Noticias.descripcionN}}</h3>
+        </div>
+        </div>
         <br>
-        <br>
-        <br>
-        <br>
+
     </div>
-<table class="table">
-    <tbody>
-        <tr *ngFor="let Noticias of notili">
-            <td>{{Noticias.nombreN}}</td>
-            <td>{{Noticias.descripcionN}}</td>
-            <td>Borrar</td>
-            <td>editarr</td>
-        </tr>
-    </tbody>
-</table>
+</div>
 <h3 class="lala">Finish</h3>

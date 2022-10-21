@@ -19,8 +19,8 @@ export class NuevaNoticiaComponent implements OnInit {
   }
 
   onCreate(): void{
-    const noti = new Noticias(this.nombreN, this.descripcionN);
-    this.sNoticias.save(noti).subscribe(data=>{
+    const noticias = new Noticias(this.nombreN, this.descripcionN);
+    this.sNoticias.save(noticias).subscribe(data=>{
       alert("Noticia Creada");
       this.router.navigate(['']);
     }, err =>{

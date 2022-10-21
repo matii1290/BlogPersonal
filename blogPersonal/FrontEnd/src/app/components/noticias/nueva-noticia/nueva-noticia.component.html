@@ -1,17 +1,22 @@
-<router-outlet></router-outlet>
 <div class="container">
     <div class="row">
         <div>
             <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
                 <div class="form-group">
-                    <label for="nombreN">Nombre de Noticia</label>
+                    <label for="nombreN" class="Titunoti">Nombre de Noticia</label>
                     <input type="text" class="form-control" id="nombreN" name="nombreN" [(ngModel)]="nombreN" required>
                 </div>
+                <br>
                 <div class="form-group">
-                    <label for="descripcionN">Cuerpo de noticia</label>
-                    <input type="text" class="form-control" id="descripcionN" name="descripcioN" [(ngModel)]="descripcionN" required>
-                </div>
-                <button class="btn btn-primary">
+                    <label for="descripcionN" class="Cuernoti">Cuerpo de noticia</label><br>
+                    <textarea type="text" class="form-control" id="descripcionN" name="descripcionN" [(ngModel)]="descripcionN" required>
+                
+                    </textarea>
+                    </div>
+                <br>
+                <br>
+                <br>
+                <button class="btn-3d">
                     Agregar noticia
                 </button>
             </form>

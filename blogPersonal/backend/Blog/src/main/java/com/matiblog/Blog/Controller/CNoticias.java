@@ -25,7 +25,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @RequestMapping("noticias")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "http://localhost:4200/")
 public class CNoticias {
 
     @Autowired
@@ -55,7 +55,7 @@ public class CNoticias {
 
     @PutMapping("/update/{id}")
     public ResponseEntity<?> update(@PathVariable("id") int id, @RequestBody dtoNoticias dtonoti) {
-        if (!sNoticias.existsByNombreN(id)) {
+        if (!sNoticias.existsById(id)) {
             return new ResponseEntity(new Mensaje("El id no existe"), HttpStatus.BAD_REQUEST);
         }
 
@@ -78,16 +78,16 @@ public class CNoticias {
 
     @DeleteMapping("/delete/{id}")
     public ResponseEntity<?> delete(@PathVariable("id") int id) {
-        if (!sNoticias.existsByNombreN(id)) {
+        if (!sNoticias.existsById(id)) {
             return new ResponseEntity(new Mensaje("no existe"), HttpStatus.NOT_FOUND);
         }
         sNoticias.delete(id);
-        return new ResponseEntity(new Mensaje("producto eliminado"), HttpStatus.OK);
+        return new ResponseEntity(new Mensaje("Noticia elminada correctamente"), HttpStatus.OK);
     }
     
     @GetMapping("/detail/{id}")
     public ResponseEntity<Noticias> getById(@PathVariable("id") int id){
-        if(!sNoticias.existsByNombreN(id))
+        if(!sNoticias.existsById(id))
             return new ResponseEntity(new Mensaje("no existe"), HttpStatus.NOT_FOUND);
         Noticias noticias = sNoticias.getOne(id).get();
         return new ResponseEntity(noticias, HttpStatus.OK);
