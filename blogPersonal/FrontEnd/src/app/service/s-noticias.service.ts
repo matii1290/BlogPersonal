@@ -9,7 +9,7 @@ import { Noticias } from '../model/noticias';
 export class SNoticiasService {
 
 
- expeURL = 'http://localhost:8080/noticias/';
+ expeURL = 'https://backblog01.herokuapp.com/noticias/';
 
   constructor(private httpClient: HttpClient) { }
 
